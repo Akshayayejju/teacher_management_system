@@ -16,6 +16,14 @@
             <th>Teacher ID</th>
             <th>Teacher Name</th>
             <!-- Add other table headers here -->
+            <th>passport_size_photo</th>
+            <th>medical_certificate</th>
+            <th>caste_certificate</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>qualifications</th>
+            <th>experience</th>
+            <th>created_time</th>
             <th>Accept / Reject / Pending</th>
             <th>Update</th>
             <th>Delete</th>
@@ -29,11 +37,28 @@
           while ($row = $query_output->fetch_assoc()) {
             $teacher_id = $row['teacher_id'];
             $teacher_name = $row['teacher_name'];
+            $passport_size_photo = $row['passport_size_photo'];
+            $medical_certificate = $row['medical_certificate'];
+            $caste_certificate = $row['caste_certificate'];
+            $address = $row['address'];
+            $phone = $row['phone'];
+            $qualifications = $row['qualifications'];
+            $experience = $row['experience'];
+            $created_time = $row['created_time'];
             // Add other variables for table data here
 
             echo "<tr>
                     <td>$teacher_id</td>
                     <td>$teacher_name</td>
+                    <td>$passport_size_photo</td>
+                    <td>$medical_certificate</td>
+                    <td>$caste_certificate</td>
+                    <td>$address</td>
+                    <td>$phone</td>
+                    <td>$qualifications</td>
+                    <td>$experience</td>
+                    <td>$created_time</td>
+
                     <!-- Add other table data here -->
                     <td>
                       <a class='btn btn-success btn-sm mr-1' href='user_accept.php?teacher_id=$teacher_id&action=accept'>Accept</a>

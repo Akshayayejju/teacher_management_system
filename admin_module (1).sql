@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2023 at 08:24 AM
+-- Generation Time: Jul 28, 2023 at 04:28 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -62,7 +62,9 @@ CREATE TABLE `letter` (
 --
 
 INSERT INTO `letter` (`teacher_id`, `letter`, `complaints`, `created_time`, `created_by`, `action`, `user_role`) VALUES
-('CS21B0222', 'social entrepreneurship.pdf', 'no complaints', '2023-07-27 12:26:37', '', 'accept', '');
+('CS21B0222', 'social entrepreneurship.pdf', 'no complaints', '2023-07-27 12:26:37', '', 'accept', ''),
+('ec21b021', 'DIC.pptx', 'no complaints', '2023-07-28 15:04:43', '', NULL, ''),
+('me21b039', 'EDP.pdf', 'no AC', '2023-07-28 15:05:43', '', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -82,7 +84,9 @@ CREATE TABLE `performance` (
 --
 
 INSERT INTO `performance` (`teacher_id`, `teacher_name`, `performance`, `notifications`) VALUES
-('CS21B0222', 'Akshaya', 'excellent', 'logo.jpg');
+('CS21B0222', 'Akshaya', 'excellent', 'logo.jpg'),
+('ec21b021', 'sriram', 'verybad', 'logo.jpg'),
+('me21b039', 'bunny', 'verybad', 'KADINTI HARSHA VARDHAN.pdf');
 
 -- --------------------------------------------------------
 
@@ -127,7 +131,9 @@ CREATE TABLE `schedule` (
 --
 
 INSERT INTO `schedule` (`teacher_id`, `teacher_name`, `schedule`, `course`, `created_time`, `created_by`, `action`, `user_role`) VALUES
-('CS21B0223', 'Akshaya', 'KADINTI HARSHA VARDHAN.pdf', 'Resume(YEA AKSHAYA).pdf', '2023-07-27 06:09:09', '', 'pending', '');
+('CS21B0223', 'Akshaya', 'KADINTI HARSHA VARDHAN.pdf', 'Resume(YEA AKSHAYA).pdf', '2023-07-27 06:09:09', '', 'pending', ''),
+('ec21b021', 'sriram', 'social entrepreneurship.pdf', 'DESIGN OF BRAKES (1).pptx', '2023-07-28 14:52:23', '', NULL, ''),
+('me21b039', 'bunny', 'KADINTI HARSHA VARDHAN.pdf', 'harsha passport size photo.jpg', '2023-07-28 14:51:28', '', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -170,7 +176,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`teacher_id`, `teacher_name`, `dob`, `passport_size_photo`, `medical_certificate`, `caste_certificate`, `address`, `phone`, `qualifications`, `experience`, `created_time`, `created_by`, `action`, `user_role`) VALUES
-('CS21B0222', 'akshayayejju', '2004-01-30', 'passport size photo.pdf', 'Resume(YEA AKSHAYA).pdf', 'Resume(YEA AKSHAYA).pdf', 'andhra pradesh', 738696, 'Resume(YEA AKSHAYA).pdf', 'btech', '2023-07-27 12:24:28', '', 'reject', '');
+('CS21B0222', 'akshayayejju', '2004-01-30', 'passport size photo.pdf', 'Resume(YEA AKSHAYA).pdf', 'Resume(YEA AKSHAYA).pdf', 'andhra pradesh', 738696, 'Resume(YEA AKSHAYA).pdf', 'btech', '2023-07-27 12:24:28', '', 'reject', ''),
+('ec21b021', 'sriram', '1111-11-11', '8 hrs workshop - startup business planning & Pre-Software Development.pdf', 'Value Chain Analysis.docx', 'logo.jpg', 'sri ap', 7777, 'logo.jpg', 'btech', '2023-07-28 15:49:21', '', NULL, ''),
+('me21b039', 'bunny', '0066-06-06', 'KADINTI HARSHA VARDHAN.pdf', 'KADINTI HARSHA VARDHAN.pdf', 'KADINTI HARSHA VARDHAN.pdf', 'andhra pradesh', 999, 'Resume(YEA AKSHAYA).pdf', 'btech', '2023-07-28 15:50:33', '', NULL, '');
 
 --
 -- Indexes for dumped tables
