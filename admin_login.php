@@ -21,7 +21,7 @@
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
     </div>
-    <button type="submit" class='btn btn-success'>Submit</button>
+    <button type="submit" class='btn btn-success'>Submit_admin</button>
   </form>
 </div>
 </body>
